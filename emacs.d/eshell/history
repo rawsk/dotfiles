@@ -1,0 +1,125 @@
+ls
+ls | grep *cpp
+ls | grep *.cpp
+ls 
+ls | grep *
+ls | grep .cpp
+ls | grep .cpp >> makefile
+g++
+g++ ALDS1_1_B.cpp
+g++ ALDS1_1_B.cpp
+./a.out
+./a.out
+g++ multipoint.cpp
+python test.py
+python test.py
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py 
+python test.py aaa
+python test.py aaa
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python test.py
+python --version
+brew search python
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+{'VERSIONER_PYTHON_PREFER_32_BIT': 'no', 'LINES': '43', 'LC_CTYPE': 'ja_JP.UTF-8', 'TERM_PROGRAM_VERSION': '343.6', 'TMPDIR': '/var/folders/q_/bj7bbvs50cv5bkbcrxvgmxxw0000gn/T/', 'LOGNAME': 'jumpeikaizu', 'USER': 'jumpeikaizu', 'HOME': '/Users/jumpeikaizu', 'PATH': '/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin', 'TERM_PROGRAM': 'Apple_Terminal', 'LANG': 'ja_JP.UTF-8', 'TERM': 'dumb', 'Apple_PubSub_Socket_Render': '/private/tmp/com.apple.launchd.R4vyTFfvqx/Render', 'VERSIONER_PYTHON_VERSION': '2.7', 'SHLVL': '1', 'XPC_FLAGS': '0x0', 'COLUMNS': '87', 'vcs_info_msg_0_': '', 'TERM_SESSION_ID': '7773074D-36B8-4A8D-BA98-89B4BCCD4B0D', 'XPC_SERVICE_NAME': '0', 'FS_TRASHER_SOCKET': '/private/tmp/com.apple.launchd.XFz67cAFyp/ListeningSocket', 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.aTnnNBRD2u/Listeners', 'SHELL': '/bin/zsh', 'GNUTERM': 'x11', 'LC_ALL': 'ja_JP.UTF-8', '_': '/usr/local/bin/emacs', 'OLDPWD': '', '__CF_USER_TEXT_ENCODING': '0x1F5:0x1:0xE', 'PWD': '/Users/jumpeikaizu/python', 'vcs_info_msg_1_': ''}
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+ls
+ls -l
+ls | grep *.cpp
+ls | grep *.cpp
+ls | grep *
+ls | grep a
+ls | grep cpp
+ls | grep cpp
+ls | grep cpp > makefile
+python ouyou.py 
+python ouyou.py 
+python ouyou.py 
+python test.py
+python test.py
+python test.py

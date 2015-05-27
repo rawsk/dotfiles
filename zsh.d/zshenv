@@ -1,0 +1,47 @@
+# -*- sh -*-
+
+## sudoユーザーに環境変数を引き継ぐ
+alias sudo='sudo env PATH=$PATH'
+## pipのダウンロードキャッシュ
+export PIP_DOWNLOAD_CACHE=${HOME}/.pip_cache
+## パッケージをvirtualenvにインストール
+export PIP_RESPECT_VIRTUALENV=true
+## pipの実行にvirtualenvを必須にする
+export PIP_REQUIRE_VIRTUALENV=true
+## 仮想環境を置くディレクトリ
+export WORKON_HOME=${HOME}/.virtualenvs
+## pythonのパスを設定($PATHの内容から変更する) 
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+## virtualenvのパスを設定($PATHの内容から変更する)
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/share/python/virtualenv
+## virtualenvwrapperスクリプトの実行
+if [ -f /usr/local/share/python/virtualenvwrapper.sh ]; then
+    source /usr/local/share/python/virtualenvwrapper.sh
+fi
+
+# ページャの設定
+if type lv > /dev/null 2>&1; then
+    ## lvを優先する。
+    export PAGER="lv"
+else
+    ## lvがなかったらlessを使う。
+    export PAGER="less"
+fi
+
+# lvの設定
+if [ "$PAGER" = "lv" ]; then
+    ## -c: ANSIエスケープシーケンスの色付けなどを有効にする。
+    ## -l: 1行が長くと折り返されていても1行として扱う。
+    ##     （コピーしたときに余計な改行を入れない。）
+    export LV="-c -l"
+else
+    ## lvがなくてもlvでページャーを起動する。
+    alias lv="$PAGER"
+fi
+
+# エディタの設定
+## emacsを使う。
+export EDITOR=emacs
+
+# リダイレクトをセキュアに実行
+set -o noclobber

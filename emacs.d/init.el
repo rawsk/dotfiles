@@ -15,6 +15,23 @@
 ;; 初期化
 (package-initialize)
 
+;;インストールされていないパッケージのインストール
+(require 'cl)
+(defvar installing-package-list
+  '(
+    ;; ここに使っているパッケージを書く。
+    flycheck
+	auto-complete
+    ))
+
+(let ((not-installed (loop for x in installing-package-list
+                            when (not (package-installed-p x))
+                            collect x)))
+  (when not-installed
+    (package-refresh-contents)
+    (dolist (pkg not-installed)
+	  (package-install pkg))))
+
 ;;caskを使う
 ;;(require 'cask "~/.cask/cask.el")
 ;;(cask-initialize)

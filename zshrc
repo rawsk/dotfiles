@@ -1,11 +1,28 @@
 # 日本語を使用
 export LANG=ja_JP.UTF-8
 
+# ヒストリを保存するファイル
+HISTFILE=~/.zsh_history
+
+# メモリ上のヒストリ数
+## 大きな数を指定してすべてのヒストリを保存するようにしている
+HISTSIZE=10000000
+# 保存するヒストリ数
+SAVEHIST=$HISTSIZE
+
 # ヒストリーに重複を表示しない
 setopt hist_ignore_all_dups
 
+# 他のターミナルとヒストリーを共有
+setopt share_history
+
+# cdで移動してもpushdと同じようにディレクトリスタックに追加
+setopt auto_pushd
+
 # コマンドミスを修正
 setopt correct
+
+
 
 # 補完
 autoload -Uz compinit
@@ -22,6 +39,8 @@ zstyle ':completion:*:default' list-colors ""
 # 色を使用出来るようにする
 autoload -Uz colors
 colors
+
+
 
 # プロンプト
 # 2行表示
@@ -45,6 +64,8 @@ precmd() {
 PROMPT='-%# '
 #RPROMPT='[%K{magenta}%d%k]'
 
+
+
 # lsの設定
 case ${OSTYPE} in
     darwin*)
@@ -57,5 +78,7 @@ case ${OSTYPE} in
         ;;
 esac
 
-# rmするときは確認
+# rm,cp,mvするときは確認
 alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"

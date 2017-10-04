@@ -82,3 +82,6 @@ esac
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
+
+# grepの設定 n:行番号の表示
+alias grep="grep -n --color=auto"

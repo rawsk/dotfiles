@@ -61,7 +61,8 @@ precmd() {
 
   print -P $left${(r:$padwidth::-:)}$right-
 }
-PROMPT='-%# '
+# %(1j,(%j),) : 実行中のジョブ数が1つ以上ある場合ジョブ数を表示
+PROMPT='-%(1j,(%j),)%B%#%b '
 #RPROMPT='[%K{magenta}%d%k]'
 
 

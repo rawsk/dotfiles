@@ -1,6 +1,13 @@
 # 日本語を使用
 export LANG=ja_JP.UTF-8
 
+# nodebrewを使用
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# Android Studioで使っているJDKを使う
+export PATH=/Applications/"Android Studio.app"/Contents/jre/jdk/Contents/Home/bin:$PATH
+export JAVA_HOME=/Applications/"Android Studio.app"/Contents/jre/jdk/Contents/Home
+
 # ヒストリを保存するファイル
 HISTFILE=~/.zsh_history
 
@@ -20,7 +27,7 @@ setopt share_history
 setopt auto_pushd
 
 # コマンドミスを修正
-setopt correct
+# setopt correct
 
 
 

@@ -4,6 +4,13 @@ export LANG=ja_JP.UTF-8
 # nodebrewを使用
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
+# pyenvを使用
+export PYENV_ROOT=${HOME}/.pyenv
+if [ -d "${PYENV_ROOT}" ]; then
+    export PATH=${PYENV_ROOT}/bin:$PATH
+    eval "$(pyenv init -)"
+fi
+
 # Android Studioで使っているJDKを使う
 export PATH=/Applications/"Android Studio.app"/Contents/jre/jdk/Contents/Home/bin:$PATH
 export JAVA_HOME=/Applications/"Android Studio.app"/Contents/jre/jdk/Contents/Home
